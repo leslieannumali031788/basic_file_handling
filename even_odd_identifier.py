@@ -3,8 +3,13 @@ class EvenOddIdentifier:
         self.filename = filename
 
     def read_file(self) -> list[int]:
+        numbers = []
         try:
             with open(self.filename, "r") as file:
+                for line in file:
+                    numbers.append(int(line.strip()))
+        except FileNotFoundError:
+            print("File not found")
                 return [int(num.rstrip("\n")) for num in file.readlines()]
         except:
             print("Ensure that the file exists with integers only and is readable.")
