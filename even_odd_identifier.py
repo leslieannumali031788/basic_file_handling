@@ -1,5 +1,5 @@
 class EvenOddIdentifier:
-    def __init__(self, filename: str = "./numbers.txt"): # sets up the first state
+    def __init__(self, filename: str = "./numbers.txt"):
         self.filename = filename
 
     def read_file(self) -> list[int]:
@@ -20,3 +20,6 @@ class EvenOddIdentifier:
                 self.write_file("even.txt", number)
             else:
                 self.write_file("odd.txt", number)
+if __name__ == "__main__":
+    extractor = EvenOddIdentifier()
+    extractor.categorize()
