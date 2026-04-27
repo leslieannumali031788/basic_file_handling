@@ -10,7 +10,8 @@ class EvenOddIdentifier:
             print("Ensure that the file exists with integers only and is readable.")
 
     def write_file(self, filename: str, content: int):
-        pass
+        with open(filename, "a") as file:
+            file.write(f"{content}\n")
 
     def categorize(self):
         pass
