@@ -14,4 +14,9 @@ class EvenOddIdentifier:
             file.write(f"{content}\n")
 
     def categorize(self):
-        pass
+        data = self.read_file()
+        for number in data:
+            if number % 2 == 0:
+                self.write_file("even.txt", number)
+            else:
+                self.write_file("odd.txt", number)
