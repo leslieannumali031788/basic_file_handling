@@ -3,7 +3,11 @@ class EvenOddIdentifier:
         self.filename = filename
 
     def read_file(self) -> list[int]:
-        
+        try:
+            with open(self.filename, "r") as file:
+                return [int(num.rstrip("\n")) for num in file.readlines()]
+        except:
+            print("Ensure that the file exists with integers only and is readable.")
 
     def write_file(self, filename: str, content: int):
         pass
