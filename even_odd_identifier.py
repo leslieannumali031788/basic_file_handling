@@ -8,5 +8,5 @@ class EvenOddIdentifier:
     def write_file(self, filename: str, content: int):
         pass
 
-    
-
+    def categorize(self):
+        pass
