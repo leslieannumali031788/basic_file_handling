@@ -3,4 +3,17 @@ class WriteMultipleLineText:
         self.filename = filename
 
     def write_multiple_textlines(self):
-       
+        try:
+            with open(self.filename, "a") as file:
+                while True:
+                    line = input("Enter line: ")
+                    file.write(f"{line}\n")
+
+                    more = input("Enter more text: ").lower()
+                    if more != "y":
+                        print("Saved")
+                        break
+
+        except Exception as error:
+            print(f"Something went wrong: {error}")
+
