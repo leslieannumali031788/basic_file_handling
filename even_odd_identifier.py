@@ -10,9 +10,9 @@ class EvenOddIdentifier:
                     numbers.append(int(line.strip()))
         except FileNotFoundError:
             print("File not found")
-                return [int(num.rstrip("\n")) for num in file.readlines()]
-        except:
-            print("Ensure that the file exists with integers only and is readable.")
+        except ValueError:
+            print("Ensure that the file only consists of integers.")
+        return numbers
 
     def write_file(self, filename: str, content: int):
         with open(filename, "a") as file:
