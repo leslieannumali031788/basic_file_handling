@@ -5,6 +5,8 @@ class EvenOddIdentifier:
     def read_file(self) -> list[int]:
         pass
 
-    
+    def write_file(self, filename: str, content: int):
+        pass
 
+    
 
