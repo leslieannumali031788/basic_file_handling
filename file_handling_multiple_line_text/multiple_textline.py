@@ -10,7 +10,7 @@ class WriteMultipleLineText:
                     file.write(f"{line}\n")
 
                     more = input("Enter more text: ").lower()
-                    if more != "y":
+                    if more == "y":
                         print("Saved")
                         break
 
@@ -18,4 +18,5 @@ class WriteMultipleLineText:
             print(f"Something went wrong: {error}")
 
 if __name__ == "__main__":
-    WriteMultipleLineText().write_multiple_textlines()
+    writer = WriteMultipleLineText()
+    writer.write_multiple_textlines()
