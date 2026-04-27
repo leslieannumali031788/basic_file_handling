@@ -10,4 +10,8 @@ class HighestGwa:
         new_data = [info.split(",") for info in data]
         highest_gwa = max(new_data, key=lambda x: x[1])
         print(f"Highest Gwa: {highest_gwa[0]}\nGwa: {highest_gwa[1]}")
-        
+
+if __name__ == "__main__":
+    gwa = HighestGwa()
+    data = gwa.read_file()
+    gwa.get_highest(data)
