@@ -7,4 +7,5 @@ class HighestGwa:
             return [line.rstrip("\n") for line in file.readlines()]
 
     def get_highest(self, data: list):
-        pass
+        new_data = [info.split(",") for info in data]
+        
