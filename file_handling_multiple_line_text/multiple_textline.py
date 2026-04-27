@@ -17,3 +17,5 @@ class WriteMultipleLineText:
         except Exception as error:
             print(f"Something went wrong: {error}")
 
+if __name__ == "__main__":
+    WriteMultipleLineText().write_multiple_textlines()
