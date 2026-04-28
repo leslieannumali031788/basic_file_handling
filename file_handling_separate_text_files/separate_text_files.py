@@ -24,4 +24,6 @@ class DataDistributor:
 
         for number in numbers:
             if number % 2 == 0:
-                self.write_file(self.even_file, number **2)
+                self.write_file(self.even_file, number ** 2)
+            else:
+                self.write_file(self.odd_file, number ** 3)
