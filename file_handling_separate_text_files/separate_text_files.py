@@ -27,3 +27,4 @@ class DataDistributor:
                 self.write_file(self.even_file, number ** 2)
             else:
                 self.write_file(self.odd_file, number ** 3)
+        print("Done")
