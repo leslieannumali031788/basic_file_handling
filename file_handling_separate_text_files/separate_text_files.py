@@ -13,7 +13,8 @@ class DataDistributor:
             return []
 
     def write_file(self, filename: str, content: int):
-        pass
+        with open(filename, "a") as file:
+            
 
     def process_file(self):
         pass
