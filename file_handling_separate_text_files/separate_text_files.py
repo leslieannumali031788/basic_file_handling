@@ -1,3 +1,6 @@
+import numbers
+
+
 class DataDistributor:
     def __init__(self, filename: str = "integers.txt"):
         self.filename = filename
@@ -18,3 +21,6 @@ class DataDistributor:
 
     def process_file(self):
         numbers = self.read_file()
+
+    for number in numbers:
+        if number % 2 == 0:
