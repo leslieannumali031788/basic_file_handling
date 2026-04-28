@@ -14,7 +14,7 @@ class DataDistributor:
 
     def write_file(self, filename: str, content: int):
         with open(filename, "a") as file:
-            
+            file.write(f"{content}\n")
 
     def process_file(self):
         pass
