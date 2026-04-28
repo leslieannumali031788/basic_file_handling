@@ -28,3 +28,7 @@ class DataDistributor:
             else:
                 self.write_file(self.odd_file, number ** 3)
         print("Done")
+
+if __name__ == "__main__":
+    distributor = DataDistributor()
+    distributor.process_file()
