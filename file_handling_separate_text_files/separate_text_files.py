@@ -22,5 +22,6 @@ class DataDistributor:
     def process_file(self):
         numbers = self.read_file()
 
-    for number in numbers:
-        if number % 2 == 0:
+        for number in numbers:
+            if number % 2 == 0:
+                self.write_file(self.even_file, number **2)
