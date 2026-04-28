@@ -7,6 +7,10 @@ class DataDistributor:
     def read_file(self):
         try:
             with open(self.filename, 'r') as file:
+                return [int(line.strip()) for line in file if line.strip()]
+        except FileNotFoundError:
+            print(f"Error: {self.filename} not found.")
+            return []
 
     def write_file(self, filename: str, content: int):
         pass
