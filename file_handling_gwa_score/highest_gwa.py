@@ -14,7 +14,7 @@ class HighestGwa:
 if __name__ == "__main__":
     gwa = HighestGwa()
     try:
-        data = gwa.read_file()
-        gwa.get_highest(data)
+        records = gwa.read_file()
+        gwa.get_highest(records)
     except FileNotFoundError:
         print("Error: File not found.")
