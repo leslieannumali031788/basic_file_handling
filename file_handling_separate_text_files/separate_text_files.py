@@ -5,7 +5,8 @@ class DataDistributor:
         self.odd_file = "triple.txt"
 
     def read_file(self):
-
+        try:
+            with open(self.filename, 'r') as file:
 
     def write_file(self, filename: str, content: int):
         pass
