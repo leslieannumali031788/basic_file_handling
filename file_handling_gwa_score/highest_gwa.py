@@ -6,8 +6,8 @@ class HighestGwa:
         with open(self.filename, "r", encoding="utf-8") as file:
             return [line.rstrip("\n") for line in file.readlines() if line.strip()]
 
-    def get_highest(self, data: list):
-        new_data = [info.split(",") for info in data]
+    def get_highest(self, student_records: list):
+        new_data = [info.split(",") for info in student_records]
         highest_gwa = max(new_data, key=lambda x: float(x[1]))
         print(f"Highest Gwa: {highest_gwa[0]}\nGwa: {highest_gwa[1]}")
 
