@@ -17,4 +17,4 @@ class DataDistributor:
             file.write(f"{content}\n")
 
     def process_file(self):
-        pass
+        numbers = self.read_file()
